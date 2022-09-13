@@ -102,7 +102,7 @@ const Page = () => {
           </Heading>
           <Paragraph>
             I&apos;m currently working on building a clone of the website human
-            benchmark. Check out some of personal projects!
+            benchmark. Check out some of my other personal projects!
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/projects">
