@@ -15,8 +15,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
-import { BioSection, BioYear } from '../components/bio'
-import { GridItem } from '../components/grid-item'
+import { BioSection, BioYear, JobTitle } from '../components/bio'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const Page = () => {
@@ -37,7 +36,7 @@ const Page = () => {
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Abe Leininger 🧑🏼‍💻
+              Abe Leininger
             </Heading>
             <p>Aspiring Software Engineer</p>
           </Box>
