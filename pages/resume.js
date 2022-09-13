@@ -78,7 +78,7 @@ const Thoughts = () => (
       </Heading>
       <Paragraph>Check out my projects tab!</Paragraph>
       <Box align="center" my={4} pb={4}>
-        <NextLink href="/resume.pdf" target="_blank">
+        <NextLink href="/projects" target="_blank">
           <Button rightIcon={<ChevronRightIcon />} colorScheme="blue">
             My projects
           </Button>
