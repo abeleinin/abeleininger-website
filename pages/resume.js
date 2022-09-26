@@ -4,10 +4,9 @@ import {
   Heading,
   Box,
   Button,
-  Badge,
-  Link,
   List,
-  ListItem
+  ListItem,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Meta } from '../components/projects'
@@ -35,44 +34,94 @@ const Thoughts = () => (
       <Heading as="h3" variant="section-title" fontSize={20} mb={4} mt={30}>
         📝 Work Experience
       </Heading>
-      <BioSection>
-        <BioYear>Vehicle Autonomy and Intelligence Lab (VAIL)</BioYear>
-        <JobTitle>Undergraduate Research</JobTitle>
-        <br />
-        <JobTitle>May 2022 - Present</JobTitle>
-        <br />
-        &emsp;Implemented algorithms for planning and controlling autonomous
-        robots using ROS in the Gazebo simulator. <br />
-        &emsp;Weekly collaborative meetings with PhD mentor to continue to
-        develop skills in the field of robotics.
-      </BioSection>
-      <BioSection>
-        <BioYear>Indiana University</BioYear>
-        <JobTitle>
-          Undergraduate Instructor for Intro to CS (CSCI-C211)
-        </JobTitle>
-        <br />
-        <JobTitle>August 2022 - Present</JobTitle>
-        <br />
-        &emsp;Led weekly lab sections of 30 students and taught foundational
-        computer science concepts in the Racket programming language like
-        recursion, binary search, and sorting. <br />
-        &emsp;Hosted one-on-one office hours to assist student in learning
-        concepts in computer science.
-      </BioSection>
-      <BioSection>
-        <BioYear>French Lick Resort</BioYear>
-        <JobTitle>Digital Marketing Intern</JobTitle>
-        <br />
-        <JobTitle>May 2021 - August 2021</JobTitle>
-        <br />
-        &emsp;Organized the creation and deployment of monthly promotional
-        Eblasts/newsletters using HTML and CSS in collaboration with graphic
-        designers and members of the marketing team. <br /> &emsp;Managed
-        routine updates to the activities and events pages on frenchlick.com
-        using HTML and CSS in coordination with the hotel and golf course event
-        managers.
-      </BioSection>
+      <Box
+        borderRadius="lg"
+        bg={useColorModeValue('#FCF5E5', '#545454')}
+        p={3}
+        mt={30}
+        mb={6}
+      >
+        <BioSection>
+          <BioYear>Vehicle Autonomy and Intelligence Lab (VAIL)</BioYear>
+          <br />
+          <JobTitle>Undergraduate Research</JobTitle>
+          <br />
+          <JobTitle>May 2022 - Present</JobTitle>
+          <br />
+          <List>
+            <ListItem>
+              Implemented algorithms for planning used by autonomous robots
+              using ROS, Python, and C++.
+            </ListItem>
+            <ListItem>
+              Utilized the Gazebo simulator to test algorithms and controllers
+              on Jackal and Turtlebot3 robots.
+            </ListItem>
+            <ListItem>
+              Coordinated and met weekly with a Ph.D. mentor to learn and build
+              projects in the robotics field.
+            </ListItem>
+          </List>
+        </BioSection>
+      </Box>
+      <Box
+        borderRadius="lg"
+        bg={useColorModeValue('#FCF5E5', '#545454')}
+        p={3}
+        mt={30}
+        mb={6}
+      >
+        <BioSection>
+          <BioYear>Indiana University</BioYear>
+          <br />
+          <JobTitle>
+            {' '}
+            Undergraduate Instructor for Intro to CS (CSCI-C211)
+          </JobTitle>
+          <br />
+          <JobTitle>August 2022 - Present</JobTitle>
+          <br />
+          <List>
+            <ListItem>
+              Led weekly lab sections of 30 students and taught foundational
+              computer science concepts in the Racket programming language, like
+              recursion, functional programming, and abstraction.
+            </ListItem>
+            <ListItem>
+              Hosted one-on-one office hours to assist student in learning
+              concepts in computer science.
+            </ListItem>
+          </List>
+        </BioSection>
+      </Box>
+      <Box
+        borderRadius="lg"
+        bg={useColorModeValue('#FCF5E5', '#545454')}
+        p={3}
+        mt={30}
+        mb={6}
+      >
+        <BioSection>
+          <BioYear>French Lick Resort</BioYear>
+          <br />
+          <JobTitle>Digital Marketing Intern</JobTitle>
+          <br />
+          <JobTitle>May 2021 - August 2022</JobTitle>
+          <br />
+          <List>
+            <ListItem>
+              Organized the creation and deployment of monthly promotional
+              Eblasts/newsletters using HTML and CSS in collaboration with
+              graphic designers and members of the marketing team.
+            </ListItem>
+            <ListItem>
+              Managed routine updates to the activities and events pages on
+              frenchlick.com using HTML and CSS in coordination with the hotel
+              and golf course event managers.
+            </ListItem>
+          </List>
+        </BioSection>
+      </Box>
       <Heading as="h3" variant="section-title" fontSize={20} mb={4} mt={30}>
         📘 Projects
       </Heading>
@@ -90,15 +139,15 @@ const Thoughts = () => (
       <List ml={4} my={4} pb={4}>
         <ListItem>
           <Meta>Languages</Meta>
-          <span>Python, JavaScript, C/C++, Java, Racket, R</span>
+          <span>Python, JavaScript, C/C++, Java, Racket, R.</span>
         </ListItem>
         <ListItem>
           <Meta>Software</Meta>
-          <span>Git, ROS, Linux, Vim, IntelliJ, VSCode</span>
+          <span>Git, ROS, Linux, Vim, IntelliJ, VSCode.</span>
         </ListItem>
         <ListItem>
           <Meta>Activities/ Interests</Meta>
-          <span>Chess Club, Guitar, Piano, Skiing</span>
+          <span>Chess Club, Guitar, Piano, Skiing.</span>
         </ListItem>
       </List>
       <Box align="center" my={4} pb={4}>

@@ -24,7 +24,7 @@ const LinkItem = ({ href, path, children }) => {
     <NextLink href={href}>
       <Link
         p={2}
-        bg={active ? useColorModeValue('#a89984', '#565656') : undefined}
+        bg={active ? useColorModeValue('#FCF5E5', '#565656') : undefined}
         color={active ? '#202023' : inactiveColor}
         rounded="4px"
       >
