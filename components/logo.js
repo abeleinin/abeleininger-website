@@ -26,7 +26,7 @@ const Logo = () => {
             fontWeight="bold"
             ml={3}
           >
-            Abe Leinigner
+            Abe Leininger
           </Text>
         </LogoBox>
       </a>
