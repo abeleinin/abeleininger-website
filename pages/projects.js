@@ -2,6 +2,8 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from '../components/section'
 import { ProjectGridItem } from '../components/grid-item'
 import thumbnailPRM from '../public/images/thumbnailPRM.png'
+import thumbnailPapyrus from '../public/images/thumbnailPapyrus.png'
+import thumbnailHB from '../public/images/thumbnailHB.png'
 import Layout from '../components/layouts/article'
 
 const Projects = () => {
@@ -12,6 +14,25 @@ const Projects = () => {
           📘 Projects
         </Heading>
         <SimpleGrid column={[1, 1, 2]} gap={6}>
+          <Section>
+            <ProjectGridItem
+              id="papyrus"
+              title="Papyrus Vim Plugin"
+              thumbnail={thumbnailPapyrus}
+            >
+              Pandoc integration for automatic Markdown to PDF compilation in
+              Vim!
+            </ProjectGridItem>
+          </Section>
+          <Section>
+            <ProjectGridItem
+              id="human-benchmark"
+              title="Human Benchmark Clone"
+              thumbnail={thumbnailHB}
+            >
+              From brain games inspired by the website Human Benchmark
+            </ProjectGridItem>
+          </Section>
           <Section>
             <ProjectGridItem
               id="prm"

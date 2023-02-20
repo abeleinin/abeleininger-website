@@ -9,22 +9,23 @@ const Project = () => {
     <Layout title="PRM">
       <Container>
         <Title>
-          PRM <Badge>2022</Badge>
+          Human Benchmark <Badge>2023</Badge>
         </Title>
         <P>
-          Implemented the probabilistic roadmapping algorithm in ROS, Python,
-          C++.
+          Clone of the website{' '}
+          <Link href="https://humanbenchmark.com/">Human Benchmark</Link>.
         </P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Github</Meta>
-            <Link href="https://github.com/abeleinin/probabilistic-roadmap-planning">
-              github.com/abeleinin/prm <ExternalLinkIcon mx="2px" />
+            <Link href="https://github.com/abeleinin/humanbenchmark">
+              github.com/abeleinin/humanbenchmark
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>ROS, Python, C++, Turtlebot3, Gazebo, Rviz, Linux</span>
+            <span>Typescript/JavaScript, Chakra UI</span>
           </ListItem>
         </List>
       </Container>

@@ -6,25 +6,28 @@ import Layout from '../../components/layouts/article'
 
 const Project = () => {
   return (
-    <Layout title="PRM">
+    <Layout title="Papyrus">
       <Container>
         <Title>
-          PRM <Badge>2022</Badge>
+          Papyrus <Badge>2023</Badge>
         </Title>
         <P>
-          Implemented the probabilistic roadmapping algorithm in ROS, Python,
-          C++.
+          Papyrus is a Markdown to PDF conversion plugin that allows users to
+          convert a markdown file into a Latex styled PDF document. By utilizing
+          the Pandoc universal document converter we can write both Markdown and
+          Latex syntax in the same file and convert it into a PDF.
         </P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Github</Meta>
-            <Link href="https://github.com/abeleinin/probabilistic-roadmap-planning">
-              github.com/abeleinin/prm <ExternalLinkIcon mx="2px" />
+            <Link href="https://github.com/abeleinin/papyrus">
+              github.com/abeleinin/papyrus
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>ROS, Python, C++, Turtlebot3, Gazebo, Rviz, Linux</span>
+            <span>Vim Script, Pandoc, Markdown, Latex</span>
           </ListItem>
         </List>
       </Container>

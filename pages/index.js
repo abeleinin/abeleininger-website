@@ -38,7 +38,6 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Abe Leininger
             </Heading>
-            <p>Aspiring Software Engineer</p>
           </Box>
           <Box
             flexShrink={0}
@@ -64,11 +63,10 @@ const Page = () => {
             👋🏻 About
           </Heading>
           <Paragraph>
-            Hello! My name is Abe Leininger, and I&apos;m from French Lick,
-            Indiana. Currently, I&apos;m taking Programming Languages, Intro to
-            AI, Linear Algebra, and Data Modeling and Inference. Some of my
-            technical interests include autonomous vehicles, robotics, and
-            embedded systems!
+            My name is Abe, and I&apos;m from Bloomington, Indiana! I&apos;m
+            currently taking Algorithms Design and Analysis, Exploratory Data
+            Analysis, and Computer Structures. I&apos;m interested in robotics,
+            AI, and embedded systems!
           </Paragraph>
         </Section>
 
@@ -77,14 +75,19 @@ const Page = () => {
             📄 Resume
           </Heading>
           <BioSection>
-            <BioYear>August 2022 - Present</BioYear>
+            <BioYear>January 2022 - Present</BioYear>
             <br />
-            UI for Introduction to Computer Science (CSCI-C211)
+            Research Assistant @ VAIL
           </BioSection>
           <BioSection>
-            <BioYear>May 2022 - Present</BioYear>
+            <BioYear>August 2022 - December 2022</BioYear>
             <br />
-            Joined the Vehicle Autonomy and Intelligence (VAIL) lab.
+            Undergraduate Instructor for Intro. to Computer Science (CSCI-C211)
+          </BioSection>
+          <BioSection>
+            <BioYear>May 2022</BioYear>
+            <br />
+            Joined <Link href="https://vail.sice.indiana.edu/">VAIL</Link> lab
           </BioSection>
           <Box align="center" my={4}>
             <NextLink href="/resume">
@@ -100,8 +103,10 @@ const Page = () => {
             📘 Projects
           </Heading>
           <Paragraph>
-            I&apos;m currently working on building a clone of the website human
-            benchmark. Check out some of my other personal projects!
+            I&apos;m currently building a vim plugin for note taking in markdown
+            called{' '}
+            <Link href="https://github.com/abeleinin/papyrus">Papyrus</Link>.
+            Check out some of my other personal projects on the Project tab!
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/projects">
