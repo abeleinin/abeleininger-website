@@ -60,6 +60,22 @@ const Thoughts = () => (
       >
         <BioSection>
           <Heading as="h2" size="md">
+            Genesys
+          </Heading>
+          <Heading as="h3" size="sm" py="2">
+            Incoming Software Engineer Intern &#x2022; Summer 2023
+          </Heading>
+        </BioSection>
+      </Box>
+      <Box
+        borderRadius="lg"
+        bg={useColorModeValue('#FCF5E5', '#545454')}
+        p={3}
+        mt={30}
+        mb={6}
+      >
+        <BioSection>
+          <Heading as="h2" size="md">
             Vehicle Autonomy and Intelligence Lab (VAIL)
           </Heading>
           <Heading as="h3" size="sm" py="2">
@@ -120,7 +136,7 @@ const Thoughts = () => (
             French Lick Resort
           </Heading>
           <Heading as="h3" size="sm" py="2">
-            Digital Marketing Intern &#x2022; May 2021 - August 2022
+            Digital Marketing Intern &#x2022; May 2021 - August 2021
           </Heading>
         </BioSection>
         <UnorderedList>

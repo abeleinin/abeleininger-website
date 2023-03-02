@@ -63,10 +63,9 @@ const Page = () => {
             👋🏻 About
           </Heading>
           <Paragraph>
-            My name is Abe, and I&apos;m from Bloomington, Indiana! I&apos;m
-            currently taking Algorithms Design and Analysis, Exploratory Data
-            Analysis, and Computer Structures. I&apos;m interested in robotics,
-            AI, and embedded systems!
+            I&apos;m currently taking Algorithms Design and Analysis,
+            Exploratory Data Analysis, and Computer Structures. I&apos;m
+            interested in robotics, AI, and embedded systems!
           </Paragraph>
         </Section>
 
@@ -75,9 +74,16 @@ const Page = () => {
             📄 Resume
           </Heading>
           <BioSection>
+            <BioYear>Summer 2023</BioYear>
+            <br />
+            Incoming Software Engineer Intern @{' '}
+            <Link href="https://www.genesys.com/">Genesys</Link>
+          </BioSection>
+          <BioSection>
             <BioYear>January 2022 - Present</BioYear>
             <br />
-            Research Assistant @ VAIL
+            Research Assistant @{' '}
+            <Link href="https://vail.sice.indiana.edu/">VAIL</Link>
           </BioSection>
           <BioSection>
             <BioYear>August 2022 - December 2022</BioYear>
@@ -103,10 +109,10 @@ const Page = () => {
             📘 Projects
           </Heading>
           <Paragraph>
-            I&apos;m currently building a vim plugin for note taking in markdown
-            called{' '}
+            I&apos;m currently building a vim plugin that converts markdown
+            notes into other document formats called{' '}
             <Link href="https://github.com/abeleinin/papyrus">Papyrus</Link>.
-            Check out some of my other personal projects on the Project tab!
+            Check out some of my other projects!
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/projects">
