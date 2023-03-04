@@ -93,7 +93,7 @@ const Page = () => {
           <BioSection>
             <BioYear>May 2022</BioYear>
             <br />
-            Joined <Link href="https://vail.sice.indiana.edu/">VAIL</Link> lab
+            Joined <Link href="https://vail.sice.indiana.edu/">VAIL</Link>
           </BioSection>
           <Box align="center" my={4}>
             <NextLink href="/resume">
@@ -109,10 +109,11 @@ const Page = () => {
             📘 Projects
           </Heading>
           <Paragraph>
-            I&apos;m currently building a vim plugin that converts markdown
-            notes into other document formats called{' '}
+            I just completed a vim plugin that converts markdown notes into
+            other document formats called{' '}
             <Link href="https://github.com/abeleinin/papyrus">Papyrus</Link>.
-            Check out some of my other projects!
+            I&apos;m planning on starting a ML project soon. Check out some of
+            my other projects!
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/projects">
