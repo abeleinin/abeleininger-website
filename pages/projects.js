@@ -25,7 +25,7 @@ const Projects = () => {
           </Section>
           <Section>
             <ProjectGridItem
-              id="human-benchmark"
+              id="humanbenchmark"
               title="Human Benchmark Clone"
               thumbnail={thumbnailHB}
             >
