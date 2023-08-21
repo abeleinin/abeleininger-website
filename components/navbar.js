@@ -24,9 +24,8 @@ const LinkItem = ({ href, path, children }) => {
     <NextLink href={href}>
       <Link
         p={2}
-        bg={active ? useColorModeValue('#FCF5E5', '#565656') : undefined}
-        color={active ? '#202023' : inactiveColor}
-        rounded="4px"
+        color={inactiveColor}
+        textDecoration={active ? `underline` : undefined}
       >
         {children}
       </Link>
@@ -68,8 +67,8 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
         >
-          <LinkItem href="/resume" path={path}>
-            Resume
+          <LinkItem href="/" path={path}>
+            About
           </LinkItem>
           <LinkItem href="/projects" path={path}>
             Projects
@@ -88,9 +87,6 @@ const Navbar = props => {
               <MenuList>
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/resume" passHref>
-                  <MenuItem as={Link}>Resume</MenuItem>
                 </NextLink>
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>

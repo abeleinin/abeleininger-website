@@ -20,8 +20,7 @@ const Projects = () => {
               title="Papyrus Vim Plugin"
               thumbnail={thumbnailPapyrus}
             >
-              Pandoc integration for automatic Markdown to PDF compilation in
-              Vim!
+              Pandoc integration for automatic file conversion in Vim
             </ProjectGridItem>
           </Section>
           <Section>
@@ -30,7 +29,7 @@ const Projects = () => {
               title="Human Benchmark Clone"
               thumbnail={thumbnailHB}
             >
-              From brain games inspired by the website Human Benchmark
+              Project inspired by the brain game website Human Benchmark
             </ProjectGridItem>
           </Section>
           <Section>
@@ -39,7 +38,7 @@ const Projects = () => {
               title="PRM Algorithm"
               thumbnail={thumbnailPRM}
             >
-              Implementing PRM Algorithm
+              Implementation of the PRM Algorithm
             </ProjectGridItem>
           </Section>
         </SimpleGrid>

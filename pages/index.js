@@ -22,18 +22,7 @@ const Page = () => {
   return (
     <Layout>
       <Container>
-        <Box
-          borderRadius="lg"
-          bg={useColorModeValue('#FCF5E5', '#545454')}
-          p={3}
-          mt={30}
-          mb={6}
-          align="center"
-        >
-          Hello! I&apos;m a junior studying Computer Science at Indiana
-          University Bloomington!
-        </Box>
-        <Box display={{ md: 'flex' }}>
+        <Box display={{ md: 'flex' }} py={6}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               Abe Leininger
@@ -49,10 +38,10 @@ const Page = () => {
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              maxWidth="100px"
+              maxWidth="120px"
               display="inline-block"
               borderRadius="full"
-              src="/images/profile.jpeg"
+              src="/images/profile.jpg"
               alt="Profile Image"
             />
           </Box>
@@ -60,12 +49,16 @@ const Page = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            👋🏻 About
+            👋🏻 Hi there
           </Heading>
           <Paragraph>
-            I&apos;m currently taking Algorithms Design and Analysis,
-            Exploratory Data Analysis, and Computer Structures. I&apos;m
-            interested in robotics, AI, and embedded systems!
+            I&apos;m a senior studying Computer Science at Indiana University in
+            Bloomington. In collaboration with Ph.D. candidates at{' '}
+            <Link href="https://vail.sice.indiana.edu/">VAIL</Link>, I&apos;m
+            building a navigation framework in ROS for autonomous traversal of
+            uneven terrain. We are targeting to submit our research to the{' '}
+            <Link href="http://iros2024-abudhabi.org/">IROS 2024</Link>{' '}
+            conference.
           </Paragraph>
         </Section>
 
@@ -74,9 +67,15 @@ const Page = () => {
             📄 Resume
           </Heading>
           <BioSection>
-            <BioYear>Summer 2023</BioYear>
+            <BioYear>Fall 2023</BioYear>
             <br />
-            Incoming Software Engineer Intern @{' '}
+            Software Engineer, Part-Time @{' '}
+            <Link href="https://www.genesys.com/">Genesys</Link>
+          </BioSection>
+          <BioSection>
+            <BioYear>May 2023 - August 2023</BioYear>
+            <br />
+            Software Engineer, Intern @{' '}
             <Link href="https://www.genesys.com/">Genesys</Link>
           </BioSection>
           <BioSection>
@@ -88,17 +87,17 @@ const Page = () => {
           <BioSection>
             <BioYear>August 2022 - December 2022</BioYear>
             <br />
-            Undergraduate Instructor for Intro. to Computer Science (CSCI-C211)
+            Undergraduate Instructor for Introduction to CS (CSCI-C211)
           </BioSection>
           <BioSection>
             <BioYear>May 2022</BioYear>
             <br />
             Joined <Link href="https://vail.sice.indiana.edu/">VAIL</Link>
           </BioSection>
-          <Box align="center" my={4}>
-            <NextLink href="/resume">
+          <Box align="center" my={4} pb={4}>
+            <NextLink href="/resume.pdf" target="_blank">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="blue">
-                My Resume
+                Resume PDF
               </Button>
             </NextLink>
           </Box>
@@ -109,16 +108,18 @@ const Page = () => {
             📘 Projects
           </Heading>
           <Paragraph>
-            I just completed a vim plugin that converts markdown notes into
-            other document formats called{' '}
-            <Link href="https://github.com/abeleinin/papyrus">Papyrus</Link>.
-            I&apos;m planning on starting a ML project soon. Check out some of
-            my other projects!
+            A recent project of mine was{' '}
+            <Link href="https://github.com/abeleinin/papyrus">Papyrus</Link>, a
+            Vim plugin that converts markdown notes into{' '}
+            <Link href="https://pandoc.org/">Pandoc</Link>
+            -supported document types. I&apos;m planning to explore computer
+            vision projects this fall. Feel free to check out some of my other
+            projects!
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/projects">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="blue">
-                My Projects
+                Projects
               </Button>
             </NextLink>
           </Box>
@@ -133,7 +134,7 @@ const Page = () => {
             <Link href="https://www.chess.com/stats/overview/the-art-of-learning">
               Chess
             </Link>
-            , Guitar, Piano, Skiing.
+            , Slacklinking, Guitar, Piano, and Skiing!
           </Paragraph>
         </Section>
         <Section delay={0.3}>
