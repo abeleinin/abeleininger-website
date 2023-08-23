@@ -134,7 +134,7 @@ const Page = () => {
             <Link href="https://www.chess.com/stats/overview/the-art-of-learning">
               Chess
             </Link>
-            , Slacklinking, Guitar, Piano, and Skiing!
+            , Slacklining, Guitar, Piano, and Skiing!
           </Paragraph>
         </Section>
         <Section delay={0.3}>
