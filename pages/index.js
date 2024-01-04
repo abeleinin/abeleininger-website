@@ -108,13 +108,9 @@ const Page = () => {
             📘 Projects
           </Heading>
           <Paragraph>
-            A recent project of mine was{' '}
-            <Link href="https://github.com/abeleinin/papyrus">Papyrus</Link>, a
-            Vim plugin that converts markdown notes into{' '}
-            <Link href="https://pandoc.org/">Pandoc</Link>
-            -supported document types. I&apos;m planning to explore computer
-            vision projects this fall. Feel free to check out some of my other
-            projects!
+            I recently contributed to <Link href="https://www.apple.com/">Apple's</Link> new ML framework {' '}
+            <Link href="https://github.com/ml-explore/mlx">mlx</Link>. I look forward to contributing more to open
+            source projects going into 2024. Feel free to check out some of my other projects!
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/projects">
