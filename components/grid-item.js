@@ -34,7 +34,7 @@ export const ProjectGridItem = ({ children, id, title, thumbnail }) => (
           {title}
         </Text>
       </Link>
-      <Text fontSize={14}>{children}</Text>
+      <Text fontSize={16}>{children}</Text>
     </LinkBox>
   </Box>
 )

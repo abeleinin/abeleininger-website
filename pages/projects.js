@@ -4,6 +4,8 @@ import { ProjectGridItem } from '../components/grid-item'
 import thumbnailPRM from '../public/images/thumbnailPRM.png'
 import thumbnailPapyrus from '../public/images/thumbnailPapyrus.png'
 import thumbnailHB from '../public/images/thumbnailHB.png'
+import thumbnailGoki from '../public/images/thumbnailGoki.png'
+import thumbnailICRA from '../public/images/thumbnailICRA.png'
 import Layout from '../components/layouts/article'
 
 const Projects = () => {
@@ -15,21 +17,27 @@ const Projects = () => {
         </Heading>
         <SimpleGrid column={[1, 1, 2]} gap={6}>
           <Section>
+            <ProjectGridItem id="goki" title="Goki" thumbnail={thumbnailGoki}>
+              An intelligent flashcard management tool for the terminal!
+            </ProjectGridItem>
+          </Section>
+          <Section>
+            <ProjectGridItem
+              id="gp-navigation"
+              title="ICRA 2024 GitHub"
+              thumbnail={thumbnailICRA}
+            >
+              Gaussian Process-based Traversability Analysis for Terrain Mapless
+              Navigation
+            </ProjectGridItem>
+          </Section>
+          <Section>
             <ProjectGridItem
               id="papyrus"
               title="Papyrus Vim Plugin"
               thumbnail={thumbnailPapyrus}
             >
               Pandoc integration for automatic file conversion in Vim
-            </ProjectGridItem>
-          </Section>
-          <Section>
-            <ProjectGridItem
-              id="humanbenchmark"
-              title="Human Benchmark Clone"
-              thumbnail={thumbnailHB}
-            >
-              Project inspired by the brain game website Human Benchmark
             </ProjectGridItem>
           </Section>
           <Section>

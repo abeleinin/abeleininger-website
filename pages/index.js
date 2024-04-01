@@ -8,15 +8,15 @@ import {
   Image,
   List,
   ListItem,
-  Icon,
-  useColorModeValue
+  Icon
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
-import { BioSection, BioYear, JobTitle } from '../components/bio'
+import { BioSection, BioYear } from '../components/bio'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { FaXTwitter } from 'react-icons/fa6'
 
 const Page = () => {
   return (
@@ -54,11 +54,16 @@ const Page = () => {
           <Paragraph>
             I&apos;m a senior studying Computer Science at Indiana University in
             Bloomington. In collaboration with Ph.D. candidates at{' '}
-            <Link href="https://vail.sice.indiana.edu/">VAIL</Link>, I&apos;m
-            building a navigation framework in ROS for autonomous traversal of
-            uneven terrain. We are targeting to submit our research to the{' '}
-            <Link href="http://iros2024-abudhabi.org/">IROS 2024</Link>{' '}
-            conference.
+            <Link href="https://vail.sice.indiana.edu/">VAIL</Link>, our work
+            recently got accepted into{' '}
+            <Link href="https://2024.ieee-icra.org/">ICRA 2024</Link>! Feel free
+            to check out our paper on{' '}
+            <Link href="https://arxiv.org/pdf/2403.19010.pdf">arXiv</Link> and
+            the{' '}
+            <Link href="https://github.com/abeleinin/gp-navigation/">
+              source code{' '}
+            </Link>
+            on GitHub.
           </Paragraph>
         </Section>
 
@@ -108,9 +113,17 @@ const Page = () => {
             📘 Projects
           </Heading>
           <Paragraph>
-            I recently contributed to <Link href="https://www.apple.com/">Apple's</Link> new ML framework {' '}
-            <Link href="https://github.com/ml-explore/mlx">mlx</Link>. I look forward to contributing more to open
-            source projects going into 2024. Feel free to check out some of my other projects!
+            I recently{' '}
+            <Link href="https://github.com/ml-explore/mlx/commits?author=abeleinin">
+              contributed
+            </Link>{' '}
+            to <Link href="https://www.apple.com/">Apple's</Link> Machine
+            Learning framework{' '}
+            <Link href="https://github.com/ml-explore/mlx">mlx</Link>. I've also
+            been working on an Anki-inspired flashcard management tool for the
+            terminal called{' '}
+            <Link href="https://github.com/abeleinin/goki/">goki</Link>. Feel
+            free to check out some of my other projects!
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/projects">
@@ -144,6 +157,17 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="blue"
                   leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @abeleinin
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/abeleinin" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="blue"
+                  leftIcon={<Icon as={FaXTwitter} />}
                 >
                   @abeleinin
                 </Button>
