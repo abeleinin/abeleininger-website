@@ -72,19 +72,19 @@ const Page = () => {
             📄 Resume
           </Heading>
           <BioSection>
-            <BioYear>September 2023 - Present</BioYear>
+            <BioYear>May 2024 - Present</BioYear>
             <br />
-            Software Engineer, Part-Time @{' '}
+            Software Engineer @{' '}
             <Link href="https://www.genesys.com/">Genesys</Link>
           </BioSection>
           <BioSection>
-            <BioYear>May 2023 - August 2023</BioYear>
+            <BioYear>May 2023 - May 2024</BioYear>
             <br />
             Software Engineer, Intern @{' '}
             <Link href="https://www.genesys.com/">Genesys</Link>
           </BioSection>
           <BioSection>
-            <BioYear>January 2022 - Present</BioYear>
+            <BioYear>January 2022 - May 2024</BioYear>
             <br />
             Research Assistant @{' '}
             <Link href="https://vail.sice.indiana.edu/">VAIL</Link>
