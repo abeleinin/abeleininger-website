@@ -49,11 +49,12 @@ const Page = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            👋🏻 Hi there
+            👋🏻 Hi
           </Heading>
           <Paragraph>
-            I&apos;m a senior studying Computer Science at Indiana University in
-            Bloomington. In collaboration with Ph.D. candidates at{' '}
+            I&apos;m a software engineer who recently graduated from Indiana
+            University with a degree in Computer Science. In collaboration with
+            Ph.D. candidates at{' '}
             <Link href="https://vail.sice.indiana.edu/">VAIL</Link>, our work
             recently got accepted into{' '}
             <Link href="https://2024.ieee-icra.org/">ICRA 2024</Link>! Feel free
@@ -65,6 +66,14 @@ const Page = () => {
             </Link>
             on GitHub.
           </Paragraph>
+          <Paragraph>
+            Over the summer, I&apos;m working to finalize a spatial memory
+            research project with{' '}
+            <Link href="https://pcl.sitehost.iu.edu/rgoldsto/rob.html">
+              Prof. Robert Goldstone
+            </Link>{' '}
+            and hope to share more about it soon!
+          </Paragraph>
         </Section>
 
         <Section delay={0.2}>
@@ -74,7 +83,7 @@ const Page = () => {
           <BioSection>
             <BioYear>May 2024 - Present</BioYear>
             <br />
-            Software Engineer @{' '}
+            Associate Software Engineer @{' '}
             <Link href="https://www.genesys.com/">Genesys</Link>
           </BioSection>
           <BioSection>
@@ -84,20 +93,18 @@ const Page = () => {
             <Link href="https://www.genesys.com/">Genesys</Link>
           </BioSection>
           <BioSection>
+            <BioYear>October 2023 - May 2024</BioYear>
+            <br />
+            Simulation Lead @{' '}
+            <Link href="https://www.indyautonomouschallenge.com/">
+              IU Indy Autonomous Challenge Team
+            </Link>
+          </BioSection>
+          <BioSection>
             <BioYear>January 2022 - May 2024</BioYear>
             <br />
             Research Assistant @{' '}
             <Link href="https://vail.sice.indiana.edu/">VAIL</Link>
-          </BioSection>
-          <BioSection>
-            <BioYear>August 2022 - December 2022</BioYear>
-            <br />
-            Undergraduate Instructor for Introduction to CS (CSCI-C211)
-          </BioSection>
-          <BioSection>
-            <BioYear>May 2022</BioYear>
-            <br />
-            Joined <Link href="https://vail.sice.indiana.edu/">VAIL</Link>
           </BioSection>
           <Box align="center" my={4} pb={4}>
             <NextLink href="/resume.pdf" target="_blank">
