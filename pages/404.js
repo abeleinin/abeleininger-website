@@ -1,26 +1,16 @@
-import NextLink from 'next/link'
-import {
-  Box,
-  Heading,
-  Text,
-  Container,
-  Divider,
-  Button
-} from '@chakra-ui/react'
+import { Box, Link, Heading, Divider, Container } from '@chakra-ui/react'
+import Section from '../components/section'
 
 const NotFound = () => {
   return (
-    <Container>
-      <Heading as="h1" mt={30}>
-        🚫 Not Found
-      </Heading>
-      <Text>The page you&apos;re looking for was not found.</Text>
-      <Divider my={6} />
-      <Box my={6} align="center">
-        <NextLink href="/">
-          <Button colorScheme="blue">Return to home</Button>
-        </NextLink>
-      </Box>
+    <Container maxWidth={{ base: '80vw', md: '40vw' }} textAlign="center">
+      <Section>
+        <Heading size="md">page not found</Heading>
+        <Box my={6} align="center">
+          <Link href="/">home</Link>
+        </Box>
+        <Divider my={6} />
+      </Section>
     </Container>
   )
 }
