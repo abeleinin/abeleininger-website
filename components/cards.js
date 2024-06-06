@@ -1,12 +1,7 @@
 import { Box, LinkBox, LinkOverlay, Flex, Text, Code } from '@chakra-ui/react'
 
 export const ResumeCard = ({ title, startDate, endDate, languages }) => (
-  <Box
-    borderLeft="1px solid"
-    borderColor="gray"
-    pl="1em"
-    mb="1em"
-  >
+  <Box borderLeft="1px solid" borderColor="gray" pl="1em" mb="1em">
     <Flex
       direction={{ base: 'column', md: 'row' }}
       justifyContent={{ base: 'none', md: 'space-between' }}
@@ -21,7 +16,9 @@ export const ResumeCard = ({ title, startDate, endDate, languages }) => (
     </Flex>
     <Flex display={{ md: 'flex' }} py={1} gap={2}>
       {languages.map((element, i) => (
-        <Code key={i} mx={{base: '1', md: '0'}}>{element}</Code>
+        <Code key={i} mx={{ base: '1', md: '0' }}>
+          {element}
+        </Code>
       ))}
     </Flex>
   </Box>
@@ -44,7 +41,9 @@ export const ProjectCard = ({ title, description, tags, link }) => (
     </LinkOverlay>
     <Flex display={{ md: 'flex' }} gap={2}>
       {tags.map(tag => (
-        <Code key={tag} mx={{base: '1', md: '0'}}>{tag}</Code>
+        <Code key={tag} mx={{ base: '1', md: '0' }}>
+          {tag}
+        </Code>
       ))}
     </Flex>
   </LinkBox>
