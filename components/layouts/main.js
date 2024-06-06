@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Navbar from '../navbar.js'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer.js'
 
@@ -14,8 +13,6 @@ const Main = ({ children, router }) => {
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <title>Abe Leininger - Homepage</title>
       </Head>
-
-      <Navbar path={router.asPath} />
 
       <Container minH="100%" maxW="container.lg.md" pt={14}>
         {children}
