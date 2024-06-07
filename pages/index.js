@@ -95,7 +95,9 @@ const Page = () => {
             title={
               <span>
                 Software Engineer @{' '}
-                <Link href="https://www.genesys.com/">Genesys</Link>
+                <Link variant="job" href="https://www.genesys.com/">
+                  Genesys
+                </Link>
               </span>
             }
             startDate={'05/24'}
@@ -106,7 +108,9 @@ const Page = () => {
             title={
               <span>
                 Software Engineer, Intern @{' '}
-                <Link href="https://www.genesys.com/">Genesys</Link>
+                <Link variant="job" href="https://www.genesys.com/">
+                  Genesys
+                </Link>
               </span>
             }
             startDate={'05/23'}
@@ -117,7 +121,10 @@ const Page = () => {
             title={
               <span>
                 Simulation Lead @{' '}
-                <Link href="https://www.indyautonomouschallenge.com/">
+                <Link
+                  variant="job"
+                  href="https://www.indyautonomouschallenge.com/"
+                >
                   IU Autonomous Racing Team
                 </Link>
               </span>
@@ -130,7 +137,9 @@ const Page = () => {
             title={
               <span>
                 Research Assistant @{' '}
-                <Link href="https://vail.sice.indiana.edu/">VAIL</Link>
+                <Link variant="job" href="https://vail.sice.indiana.edu/">
+                  VAIL
+                </Link>
               </span>
             }
             startDate={'01/22'}
@@ -178,30 +187,21 @@ const Page = () => {
           <List>
             <ListItem>
               <Link href="https://github.com/abeleinin" target="_blank">
-                <Button
-                  variant="ghost"
-                  leftIcon={<Icon as={IoLogoGithub} />}
-                >
+                <Button variant="ghost" leftIcon={<Icon as={IoLogoGithub} />}>
                   @abeleinin
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link href="https://twitter.com/abeleinin" target="_blank">
-                <Button
-                  variant="ghost"
-                  leftIcon={<Icon as={FaXTwitter} />}
-                >
+                <Button variant="ghost" leftIcon={<Icon as={FaXTwitter} />}>
                   @abeleinin
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link href="https://linkedin.com/in/abeleinin" target="_blank">
-                <Button
-                  variant="ghost"
-                  leftIcon={<Icon as={IoLogoLinkedin} />}
-                >
+                <Button variant="ghost" leftIcon={<Icon as={IoLogoLinkedin} />}>
                   @abeleinin
                 </Button>
               </Link>

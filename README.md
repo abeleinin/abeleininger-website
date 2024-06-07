@@ -1,3 +1,3 @@
 # Personal Website
 
-Simple single page websites for sharing resume, github projects, and socials.
+Simple single page website for sharing resume, github projects, and socials.
