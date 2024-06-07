@@ -24,7 +24,7 @@ const Page = () => {
   return (
     <Layout>
       <Container>
-        <Box p={6} borderWidth={2} borderRadius={10}>
+        <Box p={6} borderWidth={1} borderRadius={10} borderColor="gray">
           <Flex
             direction={{ base: 'column', md: 'row-reverse' }}
             alignItems={{ base: 'center', md: 'none' }}
@@ -36,7 +36,7 @@ const Page = () => {
               align="center"
             >
               <Image
-                borderColor="grey.100"
+                borderColor="gray"
                 borderWidth={2}
                 borderStyle="solid"
                 maxWidth="100px"
