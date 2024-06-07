@@ -59,7 +59,6 @@ const Page = () => {
                   <IconButton
                     fontSize={20}
                     variant="ghost"
-                    colorScheme="blue"
                     icon={<Icon as={IoLogoGithub} />}
                   />
                 </Link>
@@ -67,7 +66,6 @@ const Page = () => {
                   <IconButton
                     fontSize={20}
                     variant="ghost"
-                    colorScheme="blue"
                     icon={<Icon as={FaXTwitter} />}
                   />
                 </Link>
@@ -75,12 +73,11 @@ const Page = () => {
                   <IconButton
                     fontSize={20}
                     variant="ghost"
-                    colorScheme="blue"
                     icon={<Icon as={IoLogoLinkedin} />}
                   />
                 </Link>
                 <Link href="/resume.pdf">
-                  <Button variant="ghost" colorScheme="blue">
+                  <Button variant="ghost" textDecoration="underline">
                     resume
                   </Button>
                 </Link>
@@ -183,7 +180,6 @@ const Page = () => {
               <Link href="https://github.com/abeleinin" target="_blank">
                 <Button
                   variant="ghost"
-                  colorScheme="blue"
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
                   @abeleinin
@@ -194,7 +190,6 @@ const Page = () => {
               <Link href="https://twitter.com/abeleinin" target="_blank">
                 <Button
                   variant="ghost"
-                  colorScheme="blue"
                   leftIcon={<Icon as={FaXTwitter} />}
                 >
                   @abeleinin
@@ -205,7 +200,6 @@ const Page = () => {
               <Link href="https://linkedin.com/in/abeleinin" target="_blank">
                 <Button
                   variant="ghost"
-                  colorScheme="blue"
                   leftIcon={<Icon as={IoLogoLinkedin} />}
                 >
                   @abeleinin
