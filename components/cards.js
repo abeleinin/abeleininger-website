@@ -16,7 +16,12 @@ export const ResumeCard = ({ title, startDate, endDate, languages }) => (
     </Flex>
     <Flex display={{ md: 'flex' }} py={1} gap={2}>
       {languages.map((element, i) => (
-        <Code key={i} mx={{ base: '1', md: '0' }} colorScheme="gray">
+        <Code
+          key={i}
+          mx={{ base: '1', md: '0' }}
+          variant="subtle"
+          colorScheme="gray"
+        >
           {element}
         </Code>
       ))}
@@ -42,7 +47,12 @@ export const ProjectCard = ({ title, description, tags, link }) => (
     </LinkOverlay>
     <Flex display={{ md: 'flex' }} gap={2}>
       {tags.map(tag => (
-        <Code key={tag} mx={{ base: '1', md: '0' }} colorScheme="gray">
+        <Code
+          key={tag}
+          mx={{ base: '1', md: '0' }}
+          variant="subtle"
+          colorScheme="gray"
+        >
           {tag}
         </Code>
       ))}

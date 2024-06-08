@@ -57,6 +57,8 @@ const Page = () => {
               >
                 <Link href="https://github.com/abeleinin" target="_blank">
                   <IconButton
+                    color="white"
+                    _hover={{ bgColor: '#A9A9A9' }}
                     fontSize={20}
                     variant="ghost"
                     icon={<Icon as={IoLogoGithub} />}
@@ -64,6 +66,8 @@ const Page = () => {
                 </Link>
                 <Link href="https://twitter.com/abeleinin" target="_blank">
                   <IconButton
+                    color="white"
+                    _hover={{ bgColor: '#A9A9A9' }}
                     fontSize={20}
                     variant="ghost"
                     icon={<Icon as={FaXTwitter} />}
@@ -71,13 +75,20 @@ const Page = () => {
                 </Link>
                 <Link href="https://linkedin.com/in/abeleinin" target="_blank">
                   <IconButton
+                    color="white"
+                    _hover={{ bgColor: '#A9A9A9' }}
                     fontSize={20}
                     variant="ghost"
                     icon={<Icon as={IoLogoLinkedin} />}
                   />
                 </Link>
                 <Link href="/resume.pdf">
-                  <Button variant="ghost" textDecoration="underline">
+                  <Button
+                    color="white"
+                    _hover={{ bgColor: '#A9A9A9' }}
+                    variant="ghost"
+                    textDecoration="underline"
+                  >
                     resume
                   </Button>
                 </Link>
@@ -187,21 +198,36 @@ const Page = () => {
           <List>
             <ListItem>
               <Link href="https://github.com/abeleinin" target="_blank">
-                <Button variant="ghost" leftIcon={<Icon as={IoLogoGithub} />}>
+                <Button
+                  color="white"
+                  _hover={{ bgColor: '#A9A9A9' }}
+                  variant="ghost"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
                   @abeleinin
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link href="https://twitter.com/abeleinin" target="_blank">
-                <Button variant="ghost" leftIcon={<Icon as={FaXTwitter} />}>
+                <Button
+                  color="white"
+                  _hover={{ bgColor: '#A9A9A9' }}
+                  variant="ghost"
+                  leftIcon={<Icon as={FaXTwitter} />}
+                >
                   @abeleinin
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link href="https://linkedin.com/in/abeleinin" target="_blank">
-                <Button variant="ghost" leftIcon={<Icon as={IoLogoLinkedin} />}>
+                <Button
+                  color="white"
+                  _hover={{ bgColor: '#A9A9A9' }}
+                  variant="ghost"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
                   @abeleinin
                 </Button>
               </Link>
