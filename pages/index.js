@@ -24,7 +24,7 @@ const Page = () => {
   return (
     <Layout>
       <Container>
-        <Box p={6} borderWidth={1} borderRadius={10} borderColor="gray">
+        <Box p={6} borderWidth={1} borderRadius={10} borderColor="whiteAlpha.300">
           <Flex
             direction={{ base: 'column', md: 'row-reverse' }}
             alignItems={{ base: 'center', md: 'none' }}
@@ -36,7 +36,7 @@ const Page = () => {
               align="center"
             >
               <Image
-                borderColor="gray"
+                borderColor="whiteAlpha.300"
                 borderWidth={2}
                 borderStyle="solid"
                 maxWidth="100px"
@@ -58,7 +58,7 @@ const Page = () => {
                 <Link href="https://github.com/abeleinin" target="_blank">
                   <IconButton
                     color="white"
-                    _hover={{ bgColor: '#A9A9A9' }}
+                    _hover={{ bgColor: 'whiteAlpha.300' }}
                     fontSize={20}
                     variant="ghost"
                     icon={<Icon as={IoLogoGithub} />}
@@ -67,7 +67,7 @@ const Page = () => {
                 <Link href="https://twitter.com/abeleinin" target="_blank">
                   <IconButton
                     color="white"
-                    _hover={{ bgColor: '#A9A9A9' }}
+                    _hover={{ bgColor: 'whiteAlpha.300' }}
                     fontSize={20}
                     variant="ghost"
                     icon={<Icon as={FaXTwitter} />}
@@ -76,7 +76,7 @@ const Page = () => {
                 <Link href="https://linkedin.com/in/abeleinin" target="_blank">
                   <IconButton
                     color="white"
-                    _hover={{ bgColor: '#A9A9A9' }}
+                    _hover={{ bgColor: 'whiteAlpha.300' }}
                     fontSize={20}
                     variant="ghost"
                     icon={<Icon as={IoLogoLinkedin} />}
@@ -85,7 +85,7 @@ const Page = () => {
                 <Link href="/resume.pdf">
                   <Button
                     color="white"
-                    _hover={{ bgColor: '#A9A9A9' }}
+                    _hover={{ bgColor: 'whiteAlpha.300' }}
                     variant="ghost"
                     textDecoration="underline"
                   >
@@ -113,7 +113,7 @@ const Page = () => {
             }
             startDate={'05/24'}
             endDate={'current'}
-            languages={['c++20', 'boost']}
+            languages={['c++20', 'javascript']}
           />
           <ResumeCard
             title={
@@ -126,7 +126,7 @@ const Page = () => {
             }
             startDate={'05/23'}
             endDate={'05/24'}
-            languages={['c++17', 'boost', 'javascript']}
+            languages={['c++17', 'javascript']}
           />
           <ResumeCard
             title={
@@ -178,7 +178,7 @@ const Page = () => {
               description={
                 'Gaussian Process-based Traversability Analysis for Terrain Mapless Navigation'
               }
-              tags={['terrain nav', 'gaussian process', 'python']}
+              tags={['python', 'robotics', 'uneven terrain nav', 'gaussian process']}
               link="https://github.com/abeleinin/gp-navigation"
             />
             <ProjectCard
@@ -200,7 +200,7 @@ const Page = () => {
               <Link href="https://github.com/abeleinin" target="_blank">
                 <Button
                   color="white"
-                  _hover={{ bgColor: '#A9A9A9' }}
+                  _hover={{ bgColor: 'whiteAlpha.300' }}
                   variant="ghost"
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
@@ -212,7 +212,7 @@ const Page = () => {
               <Link href="https://twitter.com/abeleinin" target="_blank">
                 <Button
                   color="white"
-                  _hover={{ bgColor: '#A9A9A9' }}
+                  _hover={{ bgColor: 'whiteAlpha.300' }}
                   variant="ghost"
                   leftIcon={<Icon as={FaXTwitter} />}
                 >
@@ -224,7 +224,7 @@ const Page = () => {
               <Link href="https://linkedin.com/in/abeleinin" target="_blank">
                 <Button
                   color="white"
-                  _hover={{ bgColor: '#A9A9A9' }}
+                  _hover={{ bgColor: 'whiteAlpha.300' }}
                   variant="ghost"
                   leftIcon={<Icon as={IoLogoLinkedin} />}
                 >
