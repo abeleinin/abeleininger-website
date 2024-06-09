@@ -1,7 +1,7 @@
 import { Box, LinkBox, LinkOverlay, Flex, Text, Code } from '@chakra-ui/react'
 
 export const ResumeCard = ({ title, startDate, endDate, languages }) => (
-  <Box borderLeft="1px solid" borderColor="grey" pl="1em" mb="1em">
+  <Box borderLeft="1px solid" borderColor="gray" pl="1em" mb="1em">
     <Flex
       direction={{ base: 'column', md: 'row' }}
       justifyContent={{ base: 'none', md: 'space-between' }}
@@ -10,7 +10,7 @@ export const ResumeCard = ({ title, startDate, endDate, languages }) => (
       <Text fontWeight="bold" mr={{ md: '1em' }}>
         {title}
       </Text>
-      <Text fontWeight={300} color="grey">
+      <Text fontWeight={300} color="gray">
         {startDate} — {endDate}
       </Text>
     </Flex>
@@ -20,7 +20,7 @@ export const ResumeCard = ({ title, startDate, endDate, languages }) => (
           key={i}
           mx={{ base: '1', md: '0' }}
           variant="subtle"
-          colorScheme="gray"
+          bgColor="whiteAlpha.300"
         >
           {element}
         </Code>
@@ -51,7 +51,7 @@ export const ProjectCard = ({ title, description, tags, link }) => (
           key={tag}
           mx={{ base: '1', md: '0' }}
           variant="subtle"
-          colorScheme="gray"
+          bgColor="whiteAlpha.300"
         >
           {tag}
         </Code>
