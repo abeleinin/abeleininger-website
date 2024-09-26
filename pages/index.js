@@ -113,7 +113,7 @@ const Page = () => {
             }
             startDate={'05/24'}
             endDate={'current'}
-            languages={['c++20', 'javascript']}
+            languages={['c++', 'javascript']}
           />
           <ResumeCard
             title={
@@ -126,7 +126,7 @@ const Page = () => {
             }
             startDate={'05/23'}
             endDate={'05/24'}
-            languages={['c++17', 'javascript']}
+            languages={['c++', 'javascript']}
           />
           <ResumeCard
             title={
@@ -142,7 +142,7 @@ const Page = () => {
             }
             startDate={'10/23'}
             endDate={'05/24'}
-            languages={['c++17', 'python', 'ros2', 'unreal engine']}
+            languages={['c++', 'python', 'ros2', 'unreal engine']}
           />
           <ResumeCard
             title={
@@ -155,7 +155,7 @@ const Page = () => {
             }
             startDate={'01/22'}
             endDate={'05/24'}
-            languages={['c++17', 'python', 'ros', 'motion planning']}
+            languages={['c++', 'python', 'ros', 'motion planning']}
           />
         </Section>
 
@@ -165,6 +165,12 @@ const Page = () => {
             <Divider py={2} />
           </Heading>
           <SimpleGrid columns={[1, null, 1]} spacing="10px">
+            <ProjectCard
+              title={'Metal-Puzzles'}
+              description={'Port of srush/GPU-Puzzles from CUDA to Metal'}
+              tags={['python', 'machine learning', 'gpu programming']}
+              link="https://github.com/abeleinin/Metal-Puzzles"
+            />
             <ProjectCard
               title={'goki'}
               description={
@@ -180,12 +186,6 @@ const Page = () => {
               }
               tags={['python', 'robotics', 'uneven terrain nav', 'gaussian process']}
               link="https://github.com/abeleinin/gp-navigation"
-            />
-            <ProjectCard
-              title={'mlx xLSTM'}
-              description={'an implementation of xLSTM paper in mlx'}
-              tags={['python', 'machine learning']}
-              link="https://github.com/abeleinin/mlx-xLSTM"
             />
           </SimpleGrid>
         </Section>
