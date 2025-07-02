@@ -50,7 +50,7 @@ const Page = () => {
               <Heading as="h2" variant="page-title">
                 Abe Leininger
               </Heading>
-              <Text py={5}>interested in ml, cog sci, and robotics</Text>
+              <Text py={5}>interested in ml infra, cog sci, and robotics</Text>
               <Flex
                 justifyContent={{ base: 'center', md: 'flex-start' }}
                 gap={2}
@@ -106,14 +106,27 @@ const Page = () => {
             title={
               <span>
                 Software Engineer @{' '}
+                <Link variant="job" href="https://www.webai.com/">
+                  webAI
+                </Link>
+              </span>
+            }
+            startDate={'July 2025'}
+            endDate={'current'}
+            languages={['c++', 'mlx', 'metal', 'ml infra']}
+          />
+          <ResumeCard
+            title={
+              <span>
+                Software Engineer @{' '}
                 <Link variant="job" href="https://www.genesys.com/">
                   Genesys
                 </Link>
               </span>
             }
-            startDate={'05/24'}
-            endDate={'current'}
-            languages={['c++', 'javascript']}
+            startDate={'May 2024'}
+            endDate={'June 2025'}
+            languages={['c++', 'sip', 'webrtc']}
           />
           <ResumeCard
             title={
@@ -124,9 +137,9 @@ const Page = () => {
                 </Link>
               </span>
             }
-            startDate={'05/23'}
-            endDate={'05/24'}
-            languages={['c++', 'javascript']}
+            startDate={'May 2023'}
+            endDate={'June 2024'}
+            languages={['c++', 'javascript', 'dot', 'plantuml']}
           />
           <ResumeCard
             title={
@@ -140,8 +153,8 @@ const Page = () => {
                 </Link>
               </span>
             }
-            startDate={'10/23'}
-            endDate={'05/24'}
+            startDate={'Oct 2023'}
+            endDate={'May 2024'}
             languages={['c++', 'python', 'ros2', 'unreal engine']}
           />
           <ResumeCard
@@ -153,8 +166,8 @@ const Page = () => {
                 </Link>
               </span>
             }
-            startDate={'01/22'}
-            endDate={'05/24'}
+            startDate={'Jan 2022'}
+            endDate={'May 2024'}
             languages={['c++', 'python', 'ros', 'motion planning']}
           />
         </Section>
