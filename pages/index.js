@@ -50,7 +50,7 @@ const Page = () => {
               <Heading as="h2" variant="page-title">
                 Abe Leininger
               </Heading>
-              <Text py={5}>interested in ml infra, cog sci, and robotics</Text>
+              <Text py={5}>interested in ml infra, systems engineering, and robotics</Text>
               <Flex
                 justifyContent={{ base: 'center', md: 'flex-start' }}
                 gap={2}
@@ -106,13 +106,26 @@ const Page = () => {
             title={
               <span>
                 Software Engineer @{' '}
+                <Link variant="job" href="https://www.anduril.com/">
+                  Anduril Industries
+                </Link>
+              </span>
+            }
+            startDate={'Jan 2026'}
+            endDate={'current'}
+            languages={['rust', 'CUDA']}
+          />
+          <ResumeCard
+            title={
+              <span>
+                Software Engineer @{' '}
                 <Link variant="job" href="https://www.webai.com/">
                   webAI
                 </Link>
               </span>
             }
             startDate={'July 2025'}
-            endDate={'current'}
+            endDate={'Dec 2025'}
             languages={['c++', 'mlx', 'metal', 'ml infra']}
           />
           <ResumeCard
@@ -149,7 +162,7 @@ const Page = () => {
                   variant="job"
                   href="https://www.indyautonomouschallenge.com/"
                 >
-                  IU Autonomous Racing Team
+                  IU Autonomous Racing
                 </Link>
               </span>
             }
